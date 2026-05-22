@@ -31,6 +31,10 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
 .hero-sub{font-size:1.1rem;font-weight:300;color:var(--text-secondary);max-width:500px;line-height:1.8;opacity:0;animation:fadeUp 0.8s 0.6s forwards;margin-bottom:2.5rem}
 .hero-cta{display:inline-block;font-family:var(--font-body);font-size:0.85rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--bg-primary);background:var(--accent);padding:1rem 3rem;text-decoration:none;border:none;cursor:pointer;transition:all 0.3s ease;opacity:0;animation:fadeUp 0.8s 0.8s forwards}
 .hero-cta:hover{background:var(--accent-bright);transform:translateY(-2px);box-shadow:0 12px 40px var(--accent-glow)}
+.hero-action-photo{margin-top:2.5rem;max-width:420px;opacity:0;animation:fadeUp 0.8s 1s forwards}
+.hero-action-photo .photo-slot{border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.hero-action-photo .photo-slot img{width:100%;height:240px;object-fit:cover;display:block}
+.hero-action-photo .photo-slot-placeholder{min-height:200px;border-radius:4px}
 .section{padding:7rem 2rem;max-width:1100px;margin:0 auto}
 .section-label{font-size:0.7rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
 .section-title{font-family:var(--font-display);font-weight:700;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:1.5rem}
@@ -139,6 +143,16 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
       <h1>Tu contenido debería <em>venderte</em> mientras duermes.</h1>
       <p class="hero-sub">Soy Tío Danny — estratega de contenido y director creativo. Trabajo 1-on-1 con marcas personales y negocios que quieren dominar sus redes con intención, estrategia y resultados reales.</p>
       <a href="#aplicar" class="hero-cta">Trabaja conmigo →</a>
+      <!-- FOTO 4: Hero action photo — Danny dirigiendo/trabajando con cliente. Reemplazar src cuando tengas la foto -->
+      <div class="hero-action-photo">
+        <div class="photo-slot">
+          <!-- Reemplazar con: <img src="foto-hero-en-accion.jpg" alt="Tío Danny dirigiendo sesión con cliente"> -->
+          <div class="photo-slot-placeholder">
+            <div class="slot-icon">📸</div>
+            <div class="slot-label">En acción · Próximamente</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hero-photo">
       <img src="https://drive.google.com/thumbnail?id=1M2m-sey0ptFQ5ySIlZdHXbp_gyzwLHl5&sz=w600" alt="Tío Danny — Estratega de Contenido">
