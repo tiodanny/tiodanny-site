@@ -57,6 +57,9 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
 .nav-logo span{color:var(--accent)}
 .nav-cta{font-family:var(--font-body);font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--bg-primary);background:var(--accent);padding:0.7rem 1.8rem;border:none;text-decoration:none;cursor:pointer;transition:all 0.3s ease}
 .nav-cta:hover{background:var(--accent-bright);transform:translateY(-1px)}
+.nav-blog{font-size:0.8rem;font-weight:500;color:var(--text-secondary);text-decoration:none;letter-spacing:0.05em;transition:color 0.3s ease}
+.nav-blog:hover{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:2rem}
 /* HERO WITH PHOTO */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:8rem 2rem 4rem}
 .hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,var(--accent-glow),transparent 70%);filter:blur(80px);pointer-events:none}
@@ -176,7 +179,10 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
 <body>
 <nav class="nav">
   <a href="/" class="nav-logo">Tío <span>Danny</span></a>
-  <a href="#aplicar" class="nav-cta">Aplicar ahora</a>
+  <div class="nav-right">
+    <a href="/blog/" class="nav-blog">Blog</a>
+    <a href="#aplicar" class="nav-cta">Aplicar ahora</a>
+  </div>
 </nav>
 
 <section class="hero">
